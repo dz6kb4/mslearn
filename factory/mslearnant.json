@@ -1,0 +1,9 @@
+{
+	"name": "mslearnant",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7faf9e7b-4291-4a7e-bd10-e9914438f108",
+		"tenantId": "604c1504-c6a3-4080-81aa-b33091104187"
+	}
+}
