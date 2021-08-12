@@ -1,0 +1,9 @@
+{
+	"name": "antsdatafac",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ee858a08-c79f-40fb-996a-bbc72f1a2df4",
+		"tenantId": "75c406a5-b6a2-46c9-b685-dd8b435304d7"
+	}
+}
