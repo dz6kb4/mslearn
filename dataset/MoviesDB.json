@@ -2,15 +2,16 @@
 	"name": "MoviesDB",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "linkedService1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"container": "mslearn"
+				"type": "AzureBlobFSLocation",
+				"fileName": "moviesDB.txt",
+				"fileSystem": "mslearn"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
