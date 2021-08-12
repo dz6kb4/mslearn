@@ -63,7 +63,14 @@
 			{
 				"name": "Notebook1",
 				"type": "DatabricksNotebook",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -75,7 +82,10 @@
 				"typeProperties": {
 					"notebookPath": "/ADFTutorial/mynotebook",
 					"baseParameters": {
-						"input": "@pipeline().parameters.name"
+						"input": {
+							"value": "@pipeline().parameters.name",
+							"type": "Expression"
+						}
 					}
 				},
 				"linkedServiceName": {
