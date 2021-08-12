@@ -55,7 +55,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "MoviesDB",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				]
